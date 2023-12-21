@@ -5,13 +5,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "PetCalendar.db";
+    private static final String DATABASE_NAME = "petDB"; //DB 이름
     private static final int DATABASE_VERSION = 1;
 
     // User 테이블 정보
-    public static final String TABLE_USER = "User";
-    public static final String COLUMN_USER_ID = "user_id";
-    public static final String COLUMN_PASSWORD = "password";
+    public static final String TABLE_USER = "userTable";
+    public static final String COLUMN_USER_ID = "userID";
 
     // scheduleTBL 테이블 정보
     public static final String TABLE_SCHEDULE = "scheduleTBL";
@@ -23,8 +22,7 @@ public class DBHelper extends SQLiteOpenHelper {
     // User 테이블 생성 SQL 문
     private static final String CREATE_USER_TABLE =
             "CREATE TABLE " + TABLE_USER + " (" +
-                    COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    COLUMN_PASSWORD + " TEXT NOT NULL);";
+                    COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT);";
 
     // scheduleTBL 테이블 생성 SQL 문
     private static final String CREATE_SCHEDULE_TABLE =
@@ -54,4 +52,3 @@ public class DBHelper extends SQLiteOpenHelper {
         // 업그레이드 로직
     }
 }
-
