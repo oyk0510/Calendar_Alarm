@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_badge"
+        android:title="Badge"
+        android:icon="@drawable/defaultbadge" />
+
+    <item
+        android:id="@+id/nav_paw"
+        android:title="Paw"
+        android:icon="@drawable/defaultpaw" />
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="Calendar"
+        android:icon="@drawable/defaultcalendar" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/defaultsetting" />
+
+</menu>
